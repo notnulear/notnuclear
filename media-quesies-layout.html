@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: cornflowerblue;
+        }
+        #wrapper{
+            border: 1px solid black;
+            margin: 0 auto;
+            width: 1000px;
+        }
+        #header{
+            background-color: aqua;
+            height: 160px;
+           /* margin-bottom: 10px;*/
+            color: white;
+        }
+        #header h1{
+            padding: 30px 0 0 20px;
+        }
+        #menu{
+            background-color: darkviolet;
+        }
+        #menu ul{
+            padding: 0;
+            margin: 0;
+        }
+        #menu ul li{
+            display: inline-block;
+        }
+        #menu ul li a{
+            color: darksalmon;
+            display: block;
+            padding: 10px 13px;
+            text-decoration: none;
+        }
+        #menu ul li a:hover{
+            background-color: deepskyblue;
+            color: tomato;
+        }
+        #content{
+            width: 800px;
+            min-height: 500px;
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+
+        }
+        #sidebar{
+            background-color: teal;
+            width: 200px;
+            float: right;
+            min-height: 600px;
+        }
+        #sidebar ul li a{
+            background-color: black;
+            text-decoration: none;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>CSS MEDIA QUESIES LAYOUT</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="Contact">
+            <h2>Desiging Responsive layout with css</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum velit autem sequi sint consequuntur, aliquid ipsam facilis exercitationem unde error. Quibusdam ab soluta odio beatae aut pariatur odit optio consequuntur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa omnis ipsam consequatur voluptatem id, praesentium eos ullam laborum vero mollitia amet iusto, dolorem placeat sapiente numquam cumque hic nihil non.</p>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="#">CPISM</a></li>
+                <li><a href="#">DISM</a></li>
+                <li><a href="#">HDSE1</a></li>
+                <li><a href="#">HSIE2</a></li>
+                <li><a href="#">ADSE1</a></li>
+                <li><a href="#">ADSE2</a></li>
+            </ul>
+
+        </div>
+        <div id="footer">
+            aptech@metro-stargate.com
+            </div>
+    </div>
+</body>
+</html>

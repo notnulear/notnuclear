@@ -1,0 +1,55 @@
+ul{
+margin: 0%;
+padding: 0%;
+ 
+}
+
+.logo{
+float: left;
+    background-color: burlywood;
+    line-height: 30px;
+width: 120px;
+height: 30px;
+}
+
+
+ul li{
+background-color: burlywood;
+width: 120px;
+height: 30px;
+line-height: 30px;
+float:right;
+text-align: center;
+list-style: none;
+border: 1px solid white;
+
+}
+
+ul li a{
+
+color: rgb(109, 33, 159);
+text-decoration: none;
+display: block;
+
+}
+
+ul li a:hover{
+
+    background-color: rgb(230, 62, 127);
+
+}
+
+ul li ul li{
+
+    display: none;
+}
+
+ul li:hover ul li{
+display: block;
+
+
+}
+
+
+
+

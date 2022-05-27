@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Home</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" id="Name">
+            </div>
+            <div class="form-group">
+                <label>Age</label>
+                <input type="text" class="form-control" id="Age">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="Email" class="form-control" id="Email">
+            </div>
+            <div class="form-group">
+                <label>password</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <div class="form-group my-2">
+                <button class="btn btn-danger w-100" onclick="Add()">submit</button>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class="form-group">
+                <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Age</td>
+                        <td>Email</td>
+                        <td>password</td>
+                     
+                    </tr>
+                </thead>
+                <tbody id="result">
+                    <!-- <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-sm btn-success">Edit</button>
+                            <button class="btn btn-sm btn-danger">Delete</button>
+                            </td>
+                        </tr>  -->
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>    
+</div>
+<script>
+    function Add()
+    {
+        var  NAME=document.getElementById("Name").value;
+        var AGE=document.getElementById("Age").value;
+        var EMAIL=document.getElementById("Email").value;
+        var PASS=document.getElementById("password").value;
+
+        
+        alert("DATA IS INSERTED");
+
+        for (var i=0;i<=0;i++)
+        {
+            document.getElementById("result").innerHTML+=
+            `<tr>
+                <td>${NAME}</td>
+                <td>${AGE}</td>
+                <td>${EMAIL}</td>
+                <td>${PASS}</td>
+                <td>
+                    <button class="btn btn-sm btn-success">Edit</button>
+                    <button class="btn btn-sm btn-danger" onclick="Delete()">Delete</button>
+                    </td>
+                </tr>    
+                `;
+
+            document.getElementById("Name").value="";
+            document.getElementById("Age").value="";
+            document.getElementById("Email").value="";
+            document.getElementById("password").value="";
+
+        }
+    }
+
+
+    function Delete()
+    {
+        alert("DATA IS DELETED");
+        document.getElementById("result").deleteRow(0) ;
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.54 /js/bootstrap.min.js"></script>
+</body>
+</html>

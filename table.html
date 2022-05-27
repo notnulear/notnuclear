@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Huzaifa ustaad</title>
+</head>
+<body>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+                
+            </tr>
+        </thead>
+        <tbody id="result">
+
+        </tbody>
+
+    </table>
+    <script>
+        var person=
+        [
+            {Name:"huzaifa" , Age:"22", Address:"Gharo"},
+            {Name:"waqar" , Age:"23", Address:"faislabad"},
+            {Name:"roohan" , Age:"24", Address:"DI khan"},
+            {Name:"imran" , Age:"25", Address:"mianwali"},
+            {Name:"waheed" , Age:"26", Address:"lahore"},
+            {Name:"ammad" , Age:"27", Address:"karachi"},
+        ];
+        for( var i=0;i<=6;i++)
+        {
+            document.getElementById("result").innerHTML+=`
+            
+            <tr>
+                <td>${person[i].Name}</td>
+                <td>${person[i].Age}</td>
+                <td>${person[i].Address}</td>
+                <td>
+                    <button class="btn btn-sm btn-danger" onclick="DeleteRecord()">Delete</button>
+                    <button class="btn btn-sm btn-success" onclick="updaterecord()">Edit</button>
+                    </td>
+                </tr>
+        `;
+        }
+        function DeleteRecord()
+        {
+            document.getElementById("result").deleteRow(0);
+        }
+    
+        function updaterecord()
+        {
+            alert("please take your Assignment");
+        }
+
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
